@@ -1,0 +1,131 @@
+<!-- Font: https://www.youtube.com/watch?v=SuLSr3Dq9tk -->
+<!-- Biblioteca: https://github.com/Prinzhorn/skrollr -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+    }
+
+    .container section {
+      min-width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #fffee1;
+    }
+
+    .container section:nth-child(2) {
+      background-color: #e5eaeb;
+    }
+
+    .container section:nth-child(3) {
+      background-color: #d4d2f8;
+    }
+
+    .container section:nth-child(4) {
+      background-color: #bfb0f5;
+    }
+
+    .container section .content {
+      max-width: 800px;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .container section .content h2 {
+      color: #111;
+      font-size: 3rem;
+    }
+
+    .container section .content p {
+      color: #111;
+      font-size: 1.3rem;
+      line-height: 2rem;
+    }
+
+    @media (max-width:991px) {
+      .container {                                                                                                                              position: absolute;
+      flex-direction: column;
+      transform: none!important;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container" data-0="transform:translateX(0%);" data-100="transform:translateX(-300%);">
+
+    <section>
+      <div class="content">
+        <h2>Titulo 1</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt molestias enim est eaque corporis
+          exercitationem asperiores, dignissimos laboriosam provident. Earum repellat odio alias ad aliquam aut, iure
+          placeat asperiores quasi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit
+          exercitationem odio dolores accusantium similique assumenda, laborum, commodi est magni deleniti beatae
+          doloremque laboriosam! Natus voluptate enim molestiae rerum ipsa dolore!</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="content">
+        <h2>Titulo 2</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt molestias enim est eaque corporis
+          exercitationem asperiores, dignissimos laboriosam provident. Earum repellat odio alias ad aliquam aut, iure
+          placeat asperiores quasi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit
+          exercitationem odio dolores accusantium similique assumenda, laborum, commodi est magni deleniti beatae
+          doloremque laboriosam! Natus voluptate enim molestiae rerum ipsa dolore!</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="content">
+        <h2>Titulo 3</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt molestias enim est eaque corporis
+          exercitationem asperiores, dignissimos laboriosam provident. Earum repellat odio alias ad aliquam aut, iure
+          placeat asperiores quasi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit
+          exercitationem odio dolores accusantium similique assumenda, laborum, commodi est magni deleniti beatae
+          doloremque laboriosam! Natus voluptate enim molestiae rerum ipsa dolore!</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="content">
+        <h2>Titulo 4</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt molestias enim est eaque corporis
+          exercitationem asperiores, dignissimos laboriosam provident. Earum repellat odio alias ad aliquam aut, iure
+          placeat asperiores quasi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit
+          exercitationem odio dolores accusantium similique assumenda, laborum, commodi est magni deleniti beatae
+          doloremque laboriosam! Natus voluptate enim molestiae rerum ipsa dolore!</p>
+      </div>
+    </section>
+
+  </div>
+
+  <script type="text/javascript" src="skrollr.js"></script>
+  <script type="text/javascript">
+    var s = skrollr.init();
+  </script>
+
+</body>
+
+</html>
